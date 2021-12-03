@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title>Contacto</title>
+</head>
+<body>
+	<div>
+		<div id="menu"> <!-- menu de navegacion del sitio --> 
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="sobrenosotros.html">Sobre nosotros</a>
+            <a class="active" href="contacto.html">Contacto</a>
+            <a href="mapa.html">Mapa</a>
+        </div>
+		<div class="formulario">
+			<form action method="GET" enctype="multipart/form-data">
+				<ul>	
+					<li><p>Nombre:</p>
+						<input type="text" name="nombre" required></li>
+					<li><p>Telefono:</p>
+						<input type="number" name="telefono" required></li>
+                    <li><P>Email:</P>
+						<input type="email" name="emial" required></li>
+					<li><p>¿En que podemos ayudarte?</p>
+						<textarea class="textarea" name="Mensaje" required></textarea>
+					    <div><input type="submit" name="enviar"></div>
+					</li>
+				</ul>
+			</form>
+		</div>
+		<div class="footer"> <!-- pie de pagina -->
+				<p>Direccion: Quindimil 3739 Valentin Alsina - Buenos Aires</p>
+				<p>Teléfono: 054-11-1111-1111 - Fax.: 1111-1111</p>
+				<p>E-mail: 1111@rcc.com.ar y 111111@hotmail.com</p>
+		</div>
+	</div>
+</body>
+</html>
