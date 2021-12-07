@@ -24,25 +24,22 @@ body{
     background-color: #f34c4c;
 }
 
-a{ /* decoracion del menu  */
+#menu a{ /* decoracion del menu  */
     text-decoration: none;
     font-size: 20px;
     color: #bbb6b6;
 }
 
-.active{
+
+#menu .active{
     color: white;
 }
 
-.portada{ /* imagen de portada del sitio con imagen de fondo */
-    border: 5px solid white;
-    height: 80vh;
-    background-image: url('../imagenes/portada.jpg');
-    background-position: center;
-    background-size: cover;
-    margin-top: 100px;
-    object-fit: cover;
+#carouselExampleControls{
+    margin-top: 6.5rem;
 }
+
+
 
 .galeria{ /* galeria de productos hecho con grid */
     margin-top: 100px;
@@ -186,12 +183,10 @@ textarea:hover{
         height: 140px;
         padding-left: 10px;
     }
-    .portada{
-        background-image: url('../imagenes/portadamobile.jpg');
-        width: auto;
-        margin-top: 140px;
-    }
     
+    #carouselExampleControls{
+        margin-top: 10rem;
+    }
     .galeria{
         margin-top: 130px;
         grid-template-columns: repeat(2, 1fr);
