@@ -9,34 +9,60 @@
 </head>
 <body>
     <div>
-       <div id="menu"> <!-- menu de navegacion del sitio --> 
-           <a class="active" href="index.html">Inicio</a>
-           <a href="productos.html">Productos</a>
-           <a href="sobrenosotros.html">Sobre nosotros</a>
-           <a href="contacto.html">Contacto</a>
-           <a href="mapa.html">Mapa</a>
-       </div>
-            <div id="carouselExampleControls" class="carousel slide container-md" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imagenes/portada.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagenes/roldanas.png" class="d-block w-100" alt="Roldana">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagenes/palas.png" class="d-block w-100" alt="palas">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="imagenes/logo.jpg">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown link
+                                </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </nav>              
+        </div>
+        <div id="carouselExampleControls" class="carousel slide col-8 offset-2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/plomadas.png" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/roldanas.png" class="d-block w-100" alt="Roldana">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/palas.png" class="d-block w-100" alt="palas">
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <div class="footer"> <!-- pie de pagina del sitio --> 
             <p>Direccion: Quindimil 3739 Valentin Alsina - Buenos Aires</p>
             <p>Teléfono: 054-11-1111-1111 - Fax.: 1111-1111</p>

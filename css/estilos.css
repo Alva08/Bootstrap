@@ -10,36 +10,18 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-#menu{ /* menu del sitio hecho cobn flex box */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    border: 5px solid white;
-    width: 100%;
-    height: 100px;
-    align-content: center;
-    justify-content: space-evenly;
-    background-color: #f34c4c;
-}
-
-#menu a{ /* decoracion del menu  */
-    text-decoration: none;
-    font-size: 20px;
-    color: #bbb6b6;
-}
-
-
-#menu .active{
-    color: white;
+.container-fluid{
+    background-color:#4ea0f4 ;
 }
 
 #carouselExampleControls{
-    margin-top: 6.5rem;
+    margin-top: 110px;
 }
 
-
+#carouselExampleControls img{
+    height: 43.5rem;
+    object-fit: cover;
+}
 
 .galeria{ /* galeria de productos hecho con grid */
     margin-top: 100px;
@@ -180,13 +162,18 @@ textarea:hover{
     #menu{
         flex-direction: column;
         flex-wrap: nowrap;
-        height: 140px;
+        height: 160px;
         padding-left: 10px;
     }
     
     #carouselExampleControls{
         margin-top: 10rem;
     }
+    
+    #carouselExampleControls img{
+        height: 40rem;
+    }
+
     .galeria{
         margin-top: 130px;
         grid-template-columns: repeat(2, 1fr);
