@@ -10,8 +10,22 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-.container-fluid{
-    background-color:#4ea0f4 ;
+.menu{
+    background-color:#4ea0f4;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    z-index: 100
+}
+
+.menu div a{
+    color:black;
+}
+
+.logo{
+    background-image: url('../imagenes/logo.jpg');
+    height:74px ;
+    width:160px;
 }
 
 #carouselExampleControls{
@@ -22,20 +36,23 @@ body{
     height: 43.5rem;
     object-fit: cover;
 }
-
 .galeria{ /* galeria de productos hecho con grid */
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    margin-top: 110px;
     background-color: #4ea0f4;
-    grid-auto-rows: 500px;
-    gap: 70px;
-    padding: 70px;
+    padding: 40px;
     border: 5px solid white;
-    
 }
 
-.galeria div:hover{
+.filas{
+    margin-top: 10px;
+}
+
+.producto{
+    max-width: 400px;
+}
+
+
+.galeria .transform:hover{
     transform: scale(1.1);
 }
 
@@ -43,38 +60,12 @@ body{
     transition: all 400ms ease-in-out;
 }
 
-
-.producto{ /* imagenes de la galeria */
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-}
-
-.galeria div{
-    color: white;
-    font-size: 20px;
-    margin-bottom: 20px;
-
-}
-
-.foto4{ /* contenedor de la imagen */
-    grid-column-start: span 2;
-}
-
-.foto5{
-    grid-row-start: span 2;
-}
-
-.foto9{
-    grid-column-start: span 2;
-}
-
 .nosotros{  /* descripcion de la empresa */
     display: flex;
     flex-direction: column;
     background-color: #4ea0f4;
     border: 5px solid white;
-    margin-top: 80px;
+    margin-top: 90px;
     align-content: center;
     height: 100vh;
     object-fit: cover;
@@ -83,7 +74,7 @@ body{
 
 .item2{
     font-size: 25px;
-    color: white;
+    color: black;
     margin-top: 50px;
     padding-left: 30px;
 }
@@ -91,7 +82,7 @@ body{
 .item3{
     font-size: 20px;
     line-height: 40px;
-    color: white;
+    color: black;
     margin-top: 20px;
     padding: 30px;
 }
@@ -99,7 +90,7 @@ body{
 .formulario{
     height: 82vh;
     background-color: #4ea0f4;
-    margin-top: 80px;
+    margin-top: 110px;
     color: white;
     font-size: 20px;
     border: 5px solid white;
@@ -143,7 +134,7 @@ textarea:hover{
     display: flex;
     background-color: #4ea0f4;
     border: 5px solid white;
-    margin-top: 80px;
+    margin-top: 110px;
     height: 82vh;
     justify-content: center;
     align-items: center;
@@ -159,13 +150,6 @@ textarea:hover{
 
 @media  all and (max-width: 768px){ /* media queries para celulares grandes o tablets */
     
-    #menu{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        height: 160px;
-        padding-left: 10px;
-    }
-    
     #carouselExampleControls{
         margin-top: 10rem;
     }
@@ -176,9 +160,6 @@ textarea:hover{
 
     .galeria{
         margin-top: 130px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 300px;
-        gap: 50px;
         padding: 30px;
     }
 
@@ -195,7 +176,7 @@ textarea:hover{
     }
 
     .nosotros{  /* descripcion de la empresa */
-        margin-top: 120px;
+        margin-top: 90px;
     }
 
     .item2{
@@ -228,13 +209,6 @@ textarea:hover{
 }
 
 @media all and (max-width: 414px){ /* media queries para celulares mas chicos */
-    
-    #menu{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        height: 140px;
-        padding-left: 10px;
-    }
     
     .portada{
         background-image: url('../imagenes/portadamobile.jpg');
@@ -279,8 +253,10 @@ textarea:hover{
     text-align: center;
     background-color:#4ea0f4;
     border: 5px solid white;
-    color: white;
+    color: black;
 }
+
+
 
 
 
