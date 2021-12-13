@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lato:wght@300&display=swap');
 
 *{
     padding: 0;
@@ -7,8 +6,9 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family:'Lato', 'sans-serif';
 }
+
 
 #menu{ /* menu del sitio hecho cobn flex box */
     display: flex;
@@ -22,6 +22,7 @@ body{
     align-content: center;
     background-color: white;
     z-index: 100;
+    font-family: 'Bakbak One';
 }
 
 #menu .logo{
@@ -318,8 +319,12 @@ textarea:hover{
 
     }
 
-    .footer{
+    .footer a{
         font-size: 15px;
+    }
+    
+    .footer p{
+        font-size: 10px;
     }
 
     
@@ -335,7 +340,7 @@ textarea:hover{
     }
 
     #menu a{ /* decoracion del menu  */
-        font-size: 14px;
+        font-size: 20px;
         margin-left: 10px;
     }
 
@@ -348,7 +353,7 @@ textarea:hover{
     .portada{
         background-image: url('../imagenes/portadamobile.jpg');
         width: auto;
-        margin-top: 220px;
+        margin-top: 170px;
     }
 
     .contenedor-fotos{
@@ -366,8 +371,8 @@ textarea:hover{
     .galeria{
         margin-top: 220px;
         display: grid;
-        grid-template-columns: repeat(1, fr1);
-        grid-auto-rows: 150px;
+        grid-template-columns: auto;
+        grid-auto-rows: 300px;
         gap: 20px;
         padding: 15px;
     }
@@ -395,8 +400,8 @@ textarea:hover{
         height: 20px;
     }
 
-    .footer{
-        font-size: 10px;
+    .footer p{
+        font-size: 5px;
     }
      
 
@@ -417,6 +422,7 @@ textarea:hover{
     color: white;
     margin: 10px;
     font-size: 30px;
+    font-family: 'Bakbak One';
 }
 
 .footer p{
