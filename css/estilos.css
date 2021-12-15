@@ -1,439 +1,493 @@
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lato:wght@300&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lato:wght@300&display=swap");
+/* line 3, ../../institucional.Toth/scss/estilos.scss */
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-body{
-    font-family:'Lato';
+/* line 8, ../../institucional.Toth/scss/estilos.scss */
+body {
+  font-family: 'Lato';
 }
 
-
-#menu{ /* menu del sitio hecho cobn flex box */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    border-bottom: 1px solid black;
-    width: 100%;
-    height: 100px;
-    align-content: center;
-    background-color: white;
-    z-index: 100;
-    font-family: 'Bakbak One';
+/* line 12, ../../institucional.Toth/scss/estilos.scss */
+#menu {
+  /* menu del sitio hecho cobn flex box */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 100px;
+  align-content: center;
+  background-color: white;
+  z-index: 100;
+  font-family: 'Bakbak One';
 }
 
-#menu .logo{
-    background-image: url('../imagenes/logo.jpg');
-    height: 54px;
-    width:130px; 
+@media all and (max-width: 768px) {
+  /* line 12, ../../institucional.Toth/scss/estilos.scss */
+  #menu {
+    flex-direction: column;
+    height: 170px;
+    align-content: flex-start;
+    padding-top: 10px;
+  }
 }
 
-#menu div{
-    margin-left: 40px;
+/* line 31, ../../institucional.Toth/scss/estilos.scss */
+#menu .logo {
+  background-image: url("../imagenes/logo.jpg");
+  height: 54px;
+  width: 130px;
 }
 
-
-#menu a{ /* decoracion del menu  */
-    text-decoration: none;
-    font-size: 18px;
-    color:#2c81d7;
-    padding-top: 15px;
-    padding-left: 40px;
+@media all and (max-width: 768px) {
+  /* line 31, ../../institucional.Toth/scss/estilos.scss */
+  #menu .logo {
+    background-image: url("../imagenes/logo-mobile.jpg");
+    height: 29px;
+    width: 68px;
+  }
 }
 
-#menu .active{
-    color: black;
+/* line 41, ../../institucional.Toth/scss/estilos.scss */
+#menu div {
+  margin-left: 40px;
 }
 
-.portada{ /* imagen de portada del sitio con imagen de fondo */
-    height: 65vh;
-    display: flex;
-    flex-direction: row;
-    background-image: url('../imagenes/portada.jpg');
-    background-position: center;
-    background-size: cover;
-    margin-top: 100px;
-    justify-content: center;
-    align-items:center;
+/* line 44, ../../institucional.Toth/scss/estilos.scss */
+#menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #2c81d7;
+  padding-top: 15px;
+  padding-left: 40px;
 }
 
-.contenedor-fotos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top:30px;
-    margin-bottom: 50px;
-    
-}
-
-.contenedor-fotos h3{
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 20px ;
+@media all and (max-width: 768px) {
+  /* line 44, ../../institucional.Toth/scss/estilos.scss */
+  #menu a {
     font-size: 20px;
-    color: white;
-    background: rgba(0, 0, 0, 0.6)
+    margin-left: 10px;
+  }
 }
 
-.contenedor-fotos div{
+/* line 55, ../../institucional.Toth/scss/estilos.scss */
+#menu .active {
+  color: black;
+}
+
+/* line 60, ../../institucional.Toth/scss/estilos.scss */
+.portada {
+  /* imagen de portada del sitio con imagen de fondo */
+  height: 65vh;
+  display: flex;
+  flex-direction: row;
+  background-image: url("../imagenes/portada.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (max-width: 768px) {
+  /* line 60, ../../institucional.Toth/scss/estilos.scss */
+  .portada {
+    background-image: url("../imagenes/portadamobile.jpg");
     width: auto;
-    max-width: 583px;
-    padding: 30px;
+    margin-top: 170px;
+  }
 }
 
-.contenedor-fotos img{
-    width: 100%;
-    max-width: 583px;
+/* line 77, ../../institucional.Toth/scss/estilos.scss */
+.contenedor-fotos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
-.galeria{ /* galeria de productos hecho con grid */
-    margin-top: 110px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: white;
-    grid-auto-rows: 400px;
-    gap: 80px;
-    padding: 70px;
-}
-
-
-.galeria p{
-    color:#2c81d7;
-    font-weight: 700;
-    font-size: 40px;
-}
-
-.transform:hover{
-    transform: scale(1.1);
-}
-
-.transition{
-    transition: all 400ms ease-in-out;
-}
-
-
-.producto{ /* imagenes de la galeria */
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-}
-
-.galeria div{
-    color: white;
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-
-}
-
-
-.nosotros{  /* descripcion de la empresa */
-    display: flex;
+@media all and (max-width: 768px) {
+  /* line 77, ../../institucional.Toth/scss/estilos.scss */
+  .contenedor-fotos {
     flex-direction: column;
-    background-color: white;
-    margin-top: 75px;
-    align-content: center;
-    height: 100vh;
-    object-fit: cover;
-}
-
-
-.item2{
-    font-size: 25px;
-    color: #2c81d7;
-    margin-top: 50px;
-    padding-left: 30px;
-}
-
-.item3{
-    font-size: 20px;
-    line-height: 40px;
-    color: #2c81d7;
     margin-top: 20px;
-    padding: 30px;
+    margin-bottom: 40px;
+  }
 }
 
-.formulario{
-    height: 80vh;
-    background-color: white;
-    margin-top: 130px;
-    color: #2c81d7;
+@media all and (max-width: 414px) {
+  /* line 77, ../../institucional.Toth/scss/estilos.scss */
+  .contenedor-fotos {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    min-width: auto;
+  }
+}
+
+/* line 93, ../../institucional.Toth/scss/estilos.scss */
+.contenedor-fotos h3 {
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media all and (max-width: 768px) {
+  /* line 93, ../../institucional.Toth/scss/estilos.scss */
+  .contenedor-fotos h3 {
+    margin-left: 25px;
+    font-size: 15;
+  }
+}
+
+@media all and (max-width: 414px) {
+  /* line 93, ../../institucional.Toth/scss/estilos.scss */
+  .contenedor-fotos h3 {
+    font-size: 12px;
+  }
+}
+
+/* line 108, ../../institucional.Toth/scss/estilos.scss */
+.contenedor-fotos div {
+  width: auto;
+  max-width: 583px;
+  padding: 30px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 108, ../../institucional.Toth/scss/estilos.scss */
+  .contenedor-fotos div {
+    margin: 30px;
+  }
+}
+
+/* line 116, ../../institucional.Toth/scss/estilos.scss */
+.contenedor-fotos img {
+  width: 100%;
+  max-width: 583px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 116, ../../institucional.Toth/scss/estilos.scss */
+  .contenedor-fotos img {
+    width: 100%;
+    max-width: 583px;
+  }
+}
+
+/* line 126, ../../institucional.Toth/scss/estilos.scss */
+.galeria {
+  margin-top: 110px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: white;
+  grid-auto-rows: 400px;
+  gap: 80px;
+  padding: 70px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 126, ../../institucional.Toth/scss/estilos.scss */
+  .galeria {
+    margin-top: 170px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    gap: 50px;
+    padding: 30px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  /* line 126, ../../institucional.Toth/scss/estilos.scss */
+  .galeria {
+    margin-top: 220px;
+    grid-template-columns: auto;
+    gap: 20px;
+    padding: 15px;
+  }
+}
+
+/* line 147, ../../institucional.Toth/scss/estilos.scss */
+.galeria .producto {
+  width: 100%;
+  min-width: auto;
+}
+
+/* line 151, ../../institucional.Toth/scss/estilos.scss */
+.galeria p {
+  color: #2c81d7;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 151, ../../institucional.Toth/scss/estilos.scss */
+  .galeria p {
     font-size: 20px;
-    padding-top: 0px;
+  }
 }
 
-
-.formulario form{
-    margin-top: 60px;
-    padding: 30px;
-}
-
-.textarea{
-    width: 100%;
-    height: 100px;
-}
-
-.formulario input{
-    width: 30%;
-    height: 50px;
-}
-
-input:hover{
-    background-color: #f34c4c;
-}
-textarea:hover{
-    background-color: #f34c4c;
-}
-
-.formulario li{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    list-style: none;
-}
-
-.formulario li:hover{
-    transform:translate(15px,-15px) ;
-}
-
-.mapa{
-    display: flex;
-    background-color: white;
-    margin: 40px;
-    justify-content: center;
-    align-items: center;
-}
-
-.mapa iframe{
-    min-width: 100px;
-}
-
-
-
-
-
-@media  all and (max-width: 768px){ /* media queries para celulares grandes o tablets */
-    
-    #menu{
-        flex-direction: column;
-        height: 170px;
-        align-content: flex-start;
-        padding-top:10px;
-    }
-
-    #menu a{ /* decoracion del menu  */
-        font-size: 20px;
-        margin-left: 10px;
-    }
-
-    #menu .logo{
-        background-image: url('../imagenes/logo-mobile.jpg');
-        height: 29px;
-        width:68px;
-    }
-
-    .portada{
-        background-image: url('../imagenes/portadamobile.jpg');
-        width: auto;
-        margin-top: 170px;
-    }
-
-    .contenedor-fotos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top:20px;
-        margin-bottom: 40px;
-    }
-
-    .contenedor-fotos h3{
-        margin-top: 60px;
-        margin-left: 25px ;
-        font-size: 1rem;
-        color: white;
-        background: rgba(0, 0, 0, 0.6)
-    }
-
-    .contenedor-fotos div{
-        width: auto;
-        max-width: 583px;
-    }
-    
-    .contenedor-fotos img{
-        width: 100%;
-        max-width: 583px;
-    }
-    
-    
-    .galeria{
-        margin-top: 170px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 300px;
-        gap: 50px;
-        padding: 30px;
-    }
-
-    .galeria div{
-        font-size: 15px;
-    }
-
-    .galeria p{
-        font-size: 15px;
-    }
-    
-
-    .nosotros{  /* descripcion de la empresa */
-        margin-top: 150px;
-    }
-
-    .item2{
-        font-size: 20px;
-        padding-left: 20px;
-    }
-    
-    .item3{
-        font-size: 20px;
-        line-height: 30px;
-        margin-top: 20px;
-        padding: 20px;
-    }
-
-    .textarea{
-        width: 100%;
-        height: 60px;
-    }
-
-    .formulario{
-        margin-top: 200px ;
-        padding-top: 10px;
-        height: 71.5vh;
-    }
-    
-    .formulario input{
-        width: 30%;
-        height: 30px;
-
-    }
-
-    .footer a{
-        font-size: 15px;
-    }
-    
-    .footer p{
-        font-size: 10px;
-    }
-
-    
-}
-
-@media all and (max-width: 414px){ /* media queries para celulares mas chicos */
-    
-    #menu{
-        flex-direction: column;
-        height: 170px;
-        align-content: flex-start;
-        padding-top:10px;
-    }
-
-    #menu a{ /* decoracion del menu  */
-        font-size: 20px;
-        margin-left: 10px;
-    }
-
-    #menu .logo{
-        background-image: url('../imagenes/logo-mobile.jpg');
-        height: 29px;
-        width:68px;
-    }
-    
-    .portada{
-        background-image: url('../imagenes/portadamobile.jpg');
-        width: auto;
-        margin-top: 170px;
-    }
-
-    .contenedor-fotos{
-        margin-top:10px;
-        margin-bottom: 30px;
-        min-width: auto;
-    }
-
-    .contenedor-fotos div{
-        width: auto;
-        max-width: 583px;
-    }
-    
-    
-    .galeria{
-        margin-top: 220px;
-        display: grid;
-        grid-template-columns: auto;
-        grid-auto-rows: 300px;
-        gap: 20px;
-        padding: 15px;
-    }
-
-    .galeria div{
-        font-size: 12px;
-    }
-
-    .galeria p{
-        font-size: 12px;
-    }
-
-    .item3{
-        padding-top:20px ;
-        font-size: 15px;
-    }
-
-    .textarea{
-        width: 100%;
-        height: 30px;
-    }
-    
-    .formulario input{
-        width: 30%;
-        height: 20px;
-    }
-
-    .footer p{
-        font-size: 5px;
-    }
-     
-
-}
-
-.footer { /* decoracion del pie de pagina */
-    display: flex;
-    flex-direction: column;
-    background-color:#2c81d7;
-    color: white;
-    bottom: 0px;
-    width: 100%;
-    padding: 20px;
-}
-
-.footer a{
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    font-size: 30px;
-    font-family: 'Bakbak One';
-}
-
-.footer p{
-    margin: 10px;
+@media all and (max-width: 414px) {
+  /* line 151, ../../institucional.Toth/scss/estilos.scss */
+  .galeria p {
     font-size: 15px;
+  }
 }
 
+/* line 162, ../../institucional.Toth/scss/estilos.scss */
+.galeria div {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
+@media all and (max-width: 768px) {
+  /* line 162, ../../institucional.Toth/scss/estilos.scss */
+  .galeria div {
+    font-size: 15px;
+  }
+}
 
+@media all and (max-width: 414px) {
+  /* line 162, ../../institucional.Toth/scss/estilos.scss */
+  .galeria div {
+    font-size: 12px;
+  }
+}
 
+/* line 176, ../../institucional.Toth/scss/estilos.scss */
+.transform:hover {
+  transform: scale(1.1);
+}
 
+/* line 180, ../../institucional.Toth/scss/estilos.scss */
+.transition {
+  transition: all 400ms ease-in-out;
+}
 
+/* line 184, ../../institucional.Toth/scss/estilos.scss */
+.producto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+/* line 190, ../../institucional.Toth/scss/estilos.scss */
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 75px;
+  align-content: center;
+  height: 100vh;
+  object-fit: cover;
+}
 
+@media all and (max-width: 768px) {
+  /* line 190, ../../institucional.Toth/scss/estilos.scss */
+  .nosotros {
+    margin-top: 150px;
+  }
+}
+
+/* line 203, ../../institucional.Toth/scss/estilos.scss */
+.item2 {
+  font-size: 25px;
+  color: #2c81d7;
+  margin-top: 50px;
+  padding-left: 30px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 203, ../../institucional.Toth/scss/estilos.scss */
+  .item2 {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* line 214, ../../institucional.Toth/scss/estilos.scss */
+.item3 {
+  font-size: 20px;
+  line-height: 40px;
+  color: #2c81d7;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 214, ../../institucional.Toth/scss/estilos.scss */
+  .item3 {
+    line-height: 30px;
+    padding: 20px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  /* line 214, ../../institucional.Toth/scss/estilos.scss */
+  .item3 {
+    padding-top: 20px;
+    font-size: 15px;
+  }
+}
+
+/* line 230, ../../institucional.Toth/scss/estilos.scss */
+.formulario {
+  height: 80vh;
+  background-color: white;
+  margin-top: 130px;
+  color: #2c81d7;
+  font-size: 20px;
+  padding-top: 0px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 230, ../../institucional.Toth/scss/estilos.scss */
+  .formulario {
+    margin-top: 200px;
+    padding-top: 10px;
+    height: 71.5vh;
+  }
+}
+
+/* line 242, ../../institucional.Toth/scss/estilos.scss */
+.formulario form {
+  margin-top: 60px;
+  padding: 30px;
+}
+
+/* line 246, ../../institucional.Toth/scss/estilos.scss */
+.formulario input {
+  width: 30%;
+  height: 50px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 246, ../../institucional.Toth/scss/estilos.scss */
+  .formulario input {
+    height: 30px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  /* line 246, ../../institucional.Toth/scss/estilos.scss */
+  .formulario input {
+    height: 20px;
+  }
+}
+
+/* line 256, ../../institucional.Toth/scss/estilos.scss */
+.formulario li {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* line 265, ../../institucional.Toth/scss/estilos.scss */
+.textarea {
+  width: 100%;
+  height: 100px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 265, ../../institucional.Toth/scss/estilos.scss */
+  .textarea {
+    height: 60px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  /* line 265, ../../institucional.Toth/scss/estilos.scss */
+  .textarea {
+    height: 50px;
+  }
+}
+
+/* line 276, ../../institucional.Toth/scss/estilos.scss */
+input:hover {
+  background-color: #f34c4c;
+}
+
+/* line 280, ../../institucional.Toth/scss/estilos.scss */
+textarea:hover {
+  background-color: #f34c4c;
+}
+
+/* line 284, ../../institucional.Toth/scss/estilos.scss */
+.formulario li:hover {
+  transform: translate(15px, -15px);
+}
+
+/* line 288, ../../institucional.Toth/scss/estilos.scss */
+.mapa {
+  display: flex;
+  background-color: white;
+  margin: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 295, ../../institucional.Toth/scss/estilos.scss */
+.mapa iframe {
+  min-width: 100px;
+}
+
+/* line 300, ../../institucional.Toth/scss/estilos.scss */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #2c81d7;
+  color: white;
+  bottom: 0px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* line 308, ../../institucional.Toth/scss/estilos.scss */
+.footer a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-size: 30px;
+  font-family: 'Bakbak One';
+}
+
+@media all and (max-width: 768px) {
+  /* line 308, ../../institucional.Toth/scss/estilos.scss */
+  .footer a {
+    font-size: 25px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  /* line 308, ../../institucional.Toth/scss/estilos.scss */
+  .footer a {
+    font-size: 20px;
+  }
+}
+
+/* line 321, ../../institucional.Toth/scss/estilos.scss */
+.footer p {
+  margin: 10px;
+  font-size: 18px;
+}
+
+@media all and (max-width: 414px) {
+  /* line 321, ../../institucional.Toth/scss/estilos.scss */
+  .footer p {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
