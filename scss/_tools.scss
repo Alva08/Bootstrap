@@ -1,0 +1,9 @@
+@mixin colorMedidas($color, $fontSize, $fontWeight) {
+    color: $color ;
+    font-size: $fontSize;
+    font-weight: $fontWeight; 
+} 
+
+@each $k, $v in $miMap {
+    
+}

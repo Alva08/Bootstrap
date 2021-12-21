@@ -60,9 +60,10 @@ body {
 
 /* line 44, ../../institucional.Toth/scss/_main.scss */
 #menu a {
-  text-decoration: none;
-  font-size: 18px;
   color: #2c81d7;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
   padding-top: 15px;
   padding-left: 40px;
 }
@@ -75,12 +76,12 @@ body {
   }
 }
 
-/* line 55, ../../institucional.Toth/scss/_main.scss */
+/* line 54, ../../institucional.Toth/scss/_main.scss */
 #menu .active {
   color: black;
 }
 
-/* line 60, ../../institucional.Toth/scss/_main.scss */
+/* line 59, ../../institucional.Toth/scss/_main.scss */
 .portada {
   /* imagen de portada del sitio con imagen de fondo */
   height: 65vh;
@@ -95,7 +96,7 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 60, ../../institucional.Toth/scss/_main.scss */
+  /* line 59, ../../institucional.Toth/scss/_main.scss */
   .portada {
     background-image: url("../imagenes/portadamobile.jpg");
     width: auto;
@@ -103,7 +104,7 @@ body {
   }
 }
 
-/* line 77, ../../institucional.Toth/scss/_main.scss */
+/* line 76, ../../institucional.Toth/scss/_main.scss */
 .contenedor-fotos {
   display: flex;
   flex-direction: row;
@@ -113,7 +114,7 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 77, ../../institucional.Toth/scss/_main.scss */
+  /* line 76, ../../institucional.Toth/scss/_main.scss */
   .contenedor-fotos {
     flex-direction: column;
     margin-top: 20px;
@@ -122,7 +123,7 @@ body {
 }
 
 @media all and (max-width: 414px) {
-  /* line 77, ../../institucional.Toth/scss/_main.scss */
+  /* line 76, ../../institucional.Toth/scss/_main.scss */
   .contenedor-fotos {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -130,18 +131,19 @@ body {
   }
 }
 
-/* line 93, ../../institucional.Toth/scss/_main.scss */
+/* line 92, ../../institucional.Toth/scss/_main.scss */
 .contenedor-fotos h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
   position: absolute;
   margin-top: 60px;
   margin-left: 20px;
-  font-size: 20px;
-  color: white;
   background: rgba(0, 0, 0, 0.6);
 }
 
 @media all and (max-width: 768px) {
-  /* line 93, ../../institucional.Toth/scss/_main.scss */
+  /* line 92, ../../institucional.Toth/scss/_main.scss */
   .contenedor-fotos h3 {
     margin-left: 25px;
     font-size: 15;
@@ -149,13 +151,13 @@ body {
 }
 
 @media all and (max-width: 414px) {
-  /* line 93, ../../institucional.Toth/scss/_main.scss */
+  /* line 92, ../../institucional.Toth/scss/_main.scss */
   .contenedor-fotos h3 {
     font-size: 12px;
   }
 }
 
-/* line 108, ../../institucional.Toth/scss/_main.scss */
+/* line 106, ../../institucional.Toth/scss/_main.scss */
 .contenedor-fotos div {
   width: auto;
   max-width: 583px;
@@ -163,27 +165,27 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 108, ../../institucional.Toth/scss/_main.scss */
+  /* line 106, ../../institucional.Toth/scss/_main.scss */
   .contenedor-fotos div {
     margin: 30px;
   }
 }
 
-/* line 116, ../../institucional.Toth/scss/_main.scss */
+/* line 114, ../../institucional.Toth/scss/_main.scss */
 .contenedor-fotos img {
   width: 100%;
   max-width: 583px;
 }
 
 @media all and (max-width: 768px) {
-  /* line 116, ../../institucional.Toth/scss/_main.scss */
+  /* line 114, ../../institucional.Toth/scss/_main.scss */
   .contenedor-fotos img {
     width: 100%;
     max-width: 583px;
   }
 }
 
-/* line 126, ../../institucional.Toth/scss/_main.scss */
+/* line 124, ../../institucional.Toth/scss/_main.scss */
 .galeria {
   margin-top: 110px;
   display: grid;
@@ -195,7 +197,7 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 126, ../../institucional.Toth/scss/_main.scss */
+  /* line 124, ../../institucional.Toth/scss/_main.scss */
   .galeria {
     margin-top: 170px;
     grid-template-columns: repeat(2, 1fr);
@@ -206,7 +208,7 @@ body {
 }
 
 @media all and (max-width: 414px) {
-  /* line 126, ../../institucional.Toth/scss/_main.scss */
+  /* line 124, ../../institucional.Toth/scss/_main.scss */
   .galeria {
     margin-top: 220px;
     grid-template-columns: auto;
@@ -215,73 +217,74 @@ body {
   }
 }
 
-/* line 147, ../../institucional.Toth/scss/_main.scss */
+/* line 145, ../../institucional.Toth/scss/_main.scss */
 .galeria .producto {
   width: 100%;
   min-width: auto;
 }
 
-/* line 151, ../../institucional.Toth/scss/_main.scss */
-.galeria p {
+/* line 149, ../../institucional.Toth/scss/_main.scss */
+.galeria h3 {
   color: #2c81d7;
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 @media all and (max-width: 768px) {
-  /* line 151, ../../institucional.Toth/scss/_main.scss */
-  .galeria p {
+  /* line 149, ../../institucional.Toth/scss/_main.scss */
+  .galeria h3 {
     font-size: 20px;
   }
 }
 
 @media all and (max-width: 414px) {
-  /* line 151, ../../institucional.Toth/scss/_main.scss */
-  .galeria p {
+  /* line 149, ../../institucional.Toth/scss/_main.scss */
+  .galeria h3 {
     font-size: 15px;
   }
 }
 
-/* line 162, ../../institucional.Toth/scss/_main.scss */
+/* line 159, ../../institucional.Toth/scss/_main.scss */
 .galeria div {
   color: white;
   font-size: 20px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: start;
 }
 
 @media all and (max-width: 768px) {
-  /* line 162, ../../institucional.Toth/scss/_main.scss */
+  /* line 159, ../../institucional.Toth/scss/_main.scss */
   .galeria div {
     font-size: 15px;
   }
 }
 
 @media all and (max-width: 414px) {
-  /* line 162, ../../institucional.Toth/scss/_main.scss */
+  /* line 159, ../../institucional.Toth/scss/_main.scss */
   .galeria div {
     font-size: 12px;
   }
 }
 
-/* line 176, ../../institucional.Toth/scss/_main.scss */
+/* line 173, ../../institucional.Toth/scss/_main.scss */
 .transform:hover {
   transform: scale(1.1);
 }
 
-/* line 180, ../../institucional.Toth/scss/_main.scss */
+/* line 177, ../../institucional.Toth/scss/_main.scss */
 .transition {
   transition: all 400ms ease-in-out;
 }
 
-/* line 184, ../../institucional.Toth/scss/_main.scss */
+/* line 181, ../../institucional.Toth/scss/_main.scss */
 .producto {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* line 190, ../../institucional.Toth/scss/_main.scss */
+/* line 187, ../../institucional.Toth/scss/_main.scss */
 .nosotros {
   display: flex;
   flex-direction: column;
@@ -293,13 +296,13 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 190, ../../institucional.Toth/scss/_main.scss */
+  /* line 187, ../../institucional.Toth/scss/_main.scss */
   .nosotros {
     margin-top: 150px;
   }
 }
 
-/* line 203, ../../institucional.Toth/scss/_main.scss */
+/* line 200, ../../institucional.Toth/scss/_main.scss */
 .item2 {
   font-size: 25px;
   color: #2c81d7;
@@ -308,14 +311,14 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 203, ../../institucional.Toth/scss/_main.scss */
+  /* line 200, ../../institucional.Toth/scss/_main.scss */
   .item2 {
     font-size: 20px;
     padding-left: 20px;
   }
 }
 
-/* line 214, ../../institucional.Toth/scss/_main.scss */
+/* line 211, ../../institucional.Toth/scss/_main.scss */
 .item3 {
   font-size: 20px;
   line-height: 40px;
@@ -325,7 +328,7 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 214, ../../institucional.Toth/scss/_main.scss */
+  /* line 211, ../../institucional.Toth/scss/_main.scss */
   .item3 {
     line-height: 30px;
     padding: 20px;
@@ -333,14 +336,14 @@ body {
 }
 
 @media all and (max-width: 414px) {
-  /* line 214, ../../institucional.Toth/scss/_main.scss */
+  /* line 211, ../../institucional.Toth/scss/_main.scss */
   .item3 {
     padding-top: 20px;
     font-size: 15px;
   }
 }
 
-/* line 230, ../../institucional.Toth/scss/_main.scss */
+/* line 227, ../../institucional.Toth/scss/_main.scss */
 .formulario {
   height: 80vh;
   background-color: white;
@@ -351,7 +354,7 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 230, ../../institucional.Toth/scss/_main.scss */
+  /* line 227, ../../institucional.Toth/scss/_main.scss */
   .formulario {
     margin-top: 200px;
     padding-top: 10px;
@@ -359,33 +362,33 @@ body {
   }
 }
 
-/* line 242, ../../institucional.Toth/scss/_main.scss */
+/* line 239, ../../institucional.Toth/scss/_main.scss */
 .formulario form {
   margin-top: 60px;
   padding: 30px;
 }
 
-/* line 246, ../../institucional.Toth/scss/_main.scss */
+/* line 243, ../../institucional.Toth/scss/_main.scss */
 .formulario input {
   width: 30%;
   height: 50px;
 }
 
 @media all and (max-width: 768px) {
-  /* line 246, ../../institucional.Toth/scss/_main.scss */
+  /* line 243, ../../institucional.Toth/scss/_main.scss */
   .formulario input {
     height: 30px;
   }
 }
 
 @media all and (max-width: 414px) {
-  /* line 246, ../../institucional.Toth/scss/_main.scss */
+  /* line 243, ../../institucional.Toth/scss/_main.scss */
   .formulario input {
     height: 20px;
   }
 }
 
-/* line 256, ../../institucional.Toth/scss/_main.scss */
+/* line 253, ../../institucional.Toth/scss/_main.scss */
 .formulario li {
   width: 100%;
   padding: 12px 20px;
@@ -394,42 +397,42 @@ body {
   list-style: none;
 }
 
-/* line 265, ../../institucional.Toth/scss/_main.scss */
+/* line 262, ../../institucional.Toth/scss/_main.scss */
 .textarea {
   width: 100%;
   height: 100px;
 }
 
 @media all and (max-width: 768px) {
-  /* line 265, ../../institucional.Toth/scss/_main.scss */
+  /* line 262, ../../institucional.Toth/scss/_main.scss */
   .textarea {
     height: 60px;
   }
 }
 
 @media all and (max-width: 414px) {
-  /* line 265, ../../institucional.Toth/scss/_main.scss */
+  /* line 262, ../../institucional.Toth/scss/_main.scss */
   .textarea {
     height: 50px;
   }
 }
 
-/* line 276, ../../institucional.Toth/scss/_main.scss */
+/* line 273, ../../institucional.Toth/scss/_main.scss */
 input:hover {
   background-color: #f34c4c;
 }
 
-/* line 280, ../../institucional.Toth/scss/_main.scss */
+/* line 277, ../../institucional.Toth/scss/_main.scss */
 textarea:hover {
   background-color: #f34c4c;
 }
 
-/* line 284, ../../institucional.Toth/scss/_main.scss */
+/* line 281, ../../institucional.Toth/scss/_main.scss */
 .formulario li:hover {
   transform: translate(15px, -15px);
 }
 
-/* line 288, ../../institucional.Toth/scss/_main.scss */
+/* line 285, ../../institucional.Toth/scss/_main.scss */
 .mapa {
   display: flex;
   background-color: white;
@@ -438,12 +441,12 @@ textarea:hover {
   align-items: center;
 }
 
-/* line 295, ../../institucional.Toth/scss/_main.scss */
+/* line 292, ../../institucional.Toth/scss/_main.scss */
 .mapa iframe {
   min-width: 100px;
 }
 
-/* line 300, ../../institucional.Toth/scss/_main.scss */
+/* line 297, ../../institucional.Toth/scss/_main.scss */
 .footer {
   display: flex;
   flex-direction: column;
@@ -454,37 +457,38 @@ textarea:hover {
   padding: 20px;
 }
 
-/* line 308, ../../institucional.Toth/scss/_main.scss */
+/* line 305, ../../institucional.Toth/scss/_main.scss */
 .footer a {
-  text-decoration: none;
   color: white;
-  margin: 10px;
   font-size: 30px;
+  font-weight: 800;
+  text-decoration: none;
+  margin: 10px;
   font-family: 'Bakbak One';
 }
 
 @media all and (max-width: 768px) {
-  /* line 308, ../../institucional.Toth/scss/_main.scss */
+  /* line 305, ../../institucional.Toth/scss/_main.scss */
   .footer a {
     font-size: 25px;
   }
 }
 
 @media all and (max-width: 414px) {
-  /* line 308, ../../institucional.Toth/scss/_main.scss */
+  /* line 305, ../../institucional.Toth/scss/_main.scss */
   .footer a {
     font-size: 20px;
   }
 }
 
-/* line 321, ../../institucional.Toth/scss/_main.scss */
+/* line 317, ../../institucional.Toth/scss/_main.scss */
 .footer p {
   margin: 10px;
   font-size: 18px;
 }
 
 @media all and (max-width: 414px) {
-  /* line 321, ../../institucional.Toth/scss/_main.scss */
+  /* line 317, ../../institucional.Toth/scss/_main.scss */
   .footer p {
     font-size: 10px;
   }

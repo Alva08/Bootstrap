@@ -42,9 +42,8 @@ body{
         margin-left: 40px;
     }
     a{
+        @include colorMedidas ($azultoth,20px,400);
         text-decoration: none;
-        font-size: 18px;
-        color:#2c81d7;
         padding-top: 15px;
         padding-left: 40px;
         @media  all and (max-width: $bp-md){
@@ -91,11 +90,10 @@ body{
         min-width: auto;
     }
     h3{
+        @include colorMedidas(white,20px,600);
         position: absolute;
         margin-top: 60px;
         margin-left: 20px ;
-        font-size: 20px;
-        color: white;
         background: rgba(0, 0, 0, 0.6);
         @media  all and (max-width: $bp-md){
             margin-left: 25px ;
@@ -148,10 +146,9 @@ body{
         width: 100%;
         min-width: auto;
     }
-    p{
-        color: $azultoth;
-        font-weight: 700;
-        font-size: 20px;
+    h3{
+        @include colorMedidas($azultoth,20px,700);
+        margin-bottom: 10px;
         @media  all and (max-width: $bp-md){
             font-size: 20px;
         }
@@ -163,7 +160,7 @@ body{
         color: white;
         font-size: 20px;
         margin-bottom: 20px;
-        text-align: center;
+        text-align: start;
         @media  all and (max-width: $bp-md){
             font-size: 15px;
         }
@@ -306,10 +303,9 @@ textarea:hover{
     width: 100%;
     padding: 20px;
     a{
+        @include colorMedidas(white,30px,800);
         text-decoration: none;
-        color: white;
         margin: 10px;
-        font-size: 30px;
         font-family: 'Bakbak One';
         @media  all and (max-width: $bp-md){
             font-size: 25px;
