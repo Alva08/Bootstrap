@@ -1,0 +1,4 @@
+-Se agregao un mixin para cambiar color, font size y font weight de el menu, del footer, de los h3 del index y de los nombres de los productos.
+-Se agrego un map para cambiar los colores de las redes sociales en el footer agregando las key facebook e instagram y los valores blue y purple.
+-Se agrego un extend en box 2 para que tenga las mismas propiedades que box1.
+
