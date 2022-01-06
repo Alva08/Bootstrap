@@ -27,10 +27,20 @@ body {
   margin-left: 20px;
 }
 
-/* line 23, ../../institucional.Toth/scss/_main.scss */
-.fotoPortada div {
-  margin-top: 100px;
+/* line 22, ../../institucional.Toth/scss/_main.scss */
+.fotoPortada {
+  height: 72vh;
   background-image: url("../imagenes/portada.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: #323232;
+  background-blend-mode: soft-light;
+}
+
+/* line 30, ../../institucional.Toth/scss/_main.scss */
+.fotoPortada div h1 {
+  position: absolute;
+  color: white;
 }
 
 /*# sourceMappingURL=estilos.css.map */
