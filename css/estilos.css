@@ -17,13 +17,20 @@ body {
 
 /* line 14, ../../institucional.Toth/scss/_main.scss */
 #navBar a {
-  font-size: 20px;
   color: #2c81d7;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-/* line 18, ../../institucional.Toth/scss/_main.scss */
+/* line 17, ../../institucional.Toth/scss/_main.scss */
 #navBar li {
   margin-left: 20px;
+}
+
+/* line 23, ../../institucional.Toth/scss/_main.scss */
+.fotoPortada div {
+  margin-top: 100px;
+  background-image: url("../imagenes/portada.jpg");
 }
 
 /*# sourceMappingURL=estilos.css.map */

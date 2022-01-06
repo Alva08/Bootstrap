@@ -12,10 +12,16 @@ body{
 #navBar{
     font-family:'Bakbak';
     a{
-        font-size: 20px;
-        color:$azultoth
+       @include colorMedidas($azultoth,20px,500);
     }
     li{
         margin-left: 20px;
+    }
+}
+
+.fotoPortada{
+    div{
+        margin-top: 100px;
+        background-image: url('../imagenes/portada.jpg');  
     }
 }
