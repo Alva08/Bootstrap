@@ -28,14 +28,54 @@ body{
         background-blend-mode: soft-light; 
         h1{
             position: absolute;
-            @include colorMedidas(#fff,60px,500);          
+            @include colorMedidas(#fff,80px,600);          
+        }
+        span{
+            @include colorMedidas(#fff,40px,300); 
         }      
 }
 
 .contenedorFotos{
-    h3{
+    height: 55vh;
+    background-color: rgb(211, 210, 210);
+    h2{
         position: absolute;
-        opacity: 80%;
+        background: rgba(0, 0, 0, 0.6);
         @include colorMedidas(#fff,30px,300);          
-    } 
+    }
+    img{
+        border-radius: 1.5rem;
+    }
+}
+
+.transform:hover{
+    transform: scale(1.1);
+}
+
+.transition{
+    transition: all 400ms ease-in-out;
+}
+
+.destacados{
+    height: 60vh;
+    background-color: rgb(211, 210, 210);
+    h3{
+        @include colorMedidas(#000,40px,500);
+    }
+}
+
+.footer{
+    background-color: $azultoth;
+    height: 25vh;
+    padding: 30px;
+    .box2{
+        padding-top: 30px
+    }
+    span{
+        @include colorMedidas(#fff,30px,400);
+    }
+    p{
+        @include colorMedidas(#fff,25px,300);
+        line-height: 15px;
+    }
 }

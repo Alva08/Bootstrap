@@ -41,17 +41,85 @@ body {
 .fotoPortada h1 {
   position: absolute;
   color: #fff;
-  font-size: 60px;
-  font-weight: 500;
+  font-size: 80px;
+  font-weight: 600;
 }
 
-/* line 36, ../../institucional.Toth/scss/_main.scss */
-.contenedorFotos h3 {
+/* line 33, ../../institucional.Toth/scss/_main.scss */
+.fotoPortada span {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/* line 38, ../../institucional.Toth/scss/_main.scss */
+.contenedorFotos {
+  height: 55vh;
+  background-color: #d3d2d2;
+}
+
+/* line 41, ../../institucional.Toth/scss/_main.scss */
+.contenedorFotos h2 {
   position: absolute;
-  opacity: 80%;
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   font-size: 30px;
   font-weight: 300;
+}
+
+/* line 46, ../../institucional.Toth/scss/_main.scss */
+.contenedorFotos img {
+  border-radius: 1.5rem;
+}
+
+/* line 51, ../../institucional.Toth/scss/_main.scss */
+.transform:hover {
+  transform: scale(1.1);
+}
+
+/* line 55, ../../institucional.Toth/scss/_main.scss */
+.transition {
+  transition: all 400ms ease-in-out;
+}
+
+/* line 59, ../../institucional.Toth/scss/_main.scss */
+.destacados {
+  height: 60vh;
+  background-color: #d3d2d2;
+}
+
+/* line 62, ../../institucional.Toth/scss/_main.scss */
+.destacados h3 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+/* line 67, ../../institucional.Toth/scss/_main.scss */
+.footer {
+  background-color: #2c81d7;
+  height: 25vh;
+  padding: 30px;
+}
+
+/* line 71, ../../institucional.Toth/scss/_main.scss */
+.footer .box2 {
+  padding-top: 30px;
+}
+
+/* line 74, ../../institucional.Toth/scss/_main.scss */
+.footer span {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* line 77, ../../institucional.Toth/scss/_main.scss */
+.footer p {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 15px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
