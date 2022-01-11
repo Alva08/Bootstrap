@@ -95,26 +95,79 @@ body {
   font-weight: 500;
 }
 
-/* line 67, ../../institucional.Toth/scss/_main.scss */
+/* line 68, ../../institucional.Toth/scss/_main.scss */
+.galeria {
+  background-color: #d3d2d2;
+}
+
+/* line 70, ../../institucional.Toth/scss/_main.scss */
+.galeria .portadaProfesionales {
+  height: 72vh;
+  background-image: url("../imagenes/profesionales.jpg");
+  background-position: center;
+  background-color: #323232;
+  background-blend-mode: soft-light;
+  object-fit: cover;
+}
+
+/* line 78, ../../institucional.Toth/scss/_main.scss */
+.galeria .productos {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 82, ../../institucional.Toth/scss/_main.scss */
+.galeria .imagenesProductos {
+  display: flex;
+  flex-direction: row;
+}
+
+@media all and (max-width: 768px) {
+  /* line 82, ../../institucional.Toth/scss/_main.scss */
+  .galeria .imagenesProductos {
+    flex-direction: column;
+  }
+}
+
+/* line 89, ../../institucional.Toth/scss/_main.scss */
+.galeria .descripcionProductos {
+  max-width: 600px;
+}
+
+/* line 92, ../../institucional.Toth/scss/_main.scss */
+.galeria h3 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* line 95, ../../institucional.Toth/scss/_main.scss */
+.galeria p {
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 100, ../../institucional.Toth/scss/_main.scss */
 .footer {
   background-color: #2c81d7;
   height: 25vh;
   padding: 30px;
 }
 
-/* line 71, ../../institucional.Toth/scss/_main.scss */
+/* line 104, ../../institucional.Toth/scss/_main.scss */
 .footer .box2 {
   padding-top: 30px;
 }
 
-/* line 74, ../../institucional.Toth/scss/_main.scss */
+/* line 107, ../../institucional.Toth/scss/_main.scss */
 .footer span {
   color: #fff;
   font-size: 30px;
   font-weight: 400;
 }
 
-/* line 77, ../../institucional.Toth/scss/_main.scss */
+/* line 110, ../../institucional.Toth/scss/_main.scss */
 .footer p {
   color: #fff;
   font-size: 25px;
