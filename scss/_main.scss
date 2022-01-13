@@ -36,7 +36,6 @@ body{
 }
 
 .contenedorFotos{
-    height: 55vh;
     background-color: rgb(211, 210, 210);
     h2{
         position: absolute;
@@ -57,7 +56,6 @@ body{
 }
 
 .destacados{
-    height: 60vh;
     background-color: rgb(211, 210, 210);
     h3{
         @include colorMedidas(#000,40px,500);
@@ -71,23 +69,14 @@ body{
         height: 72vh;
         background-image: url('../imagenes/profesionales.jpg');
         background-position: center;
-        background-color:rgb(50, 50, 50);
-        background-blend-mode: soft-light;
         object-fit: cover;
     }
-    .productos{
-        display: flex;
-        flex-direction: column;
-    }
-    .imagenesProductos{
-        display: flex;
-        flex-direction: row;
-        @media  all and (max-width: $bp-md){
-            flex-direction: column;
-        }
-    }
-    .descripcionProductos{
-        max-width: 600px;
+    .portadaJardin{
+        height: 72vh;
+        background-size: cover;
+        background-image: url('../imagenes/sujardin2.jpg');
+        background-position: center;
+        object-fit: cover;
     }
     h3{
         @include colorMedidas(#000,25px,600);
@@ -99,10 +88,14 @@ body{
 
 .footer{
     background-color: $azultoth;
-    height: 25vh;
-    padding: 30px;
+    .box1{
+        color: white;
+        a{
+            color: white;
+        }
+    }
     .box2{
-        padding-top: 30px
+        
     }
     span{
         @include colorMedidas(#fff,30px,400);

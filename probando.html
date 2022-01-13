@@ -12,95 +12,101 @@
     <title>Herramientas de construccion</title>
 </head>
 <body>
-        <nav id="navBar" class="navbar navbar-expand-md navbar-light bg-light border-1 border-bottom border-dark">
-            <div class="container-fluid">  
-                <a class="navbar-brand" href="index.html">
-                    <img src="imagenes/logo.jpg" alt="" width="128" height="54">
-                </a>                 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="productos-contruccion.html">Para profesionales</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="productos-jardin.html">Para su jardin</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sobrenosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>              
+    <nav id="navBar" class="navbar navbar-expand-md navbar-light bg-light border-1 border-bottom border-dark">
+        <div class="container-fluid">  
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/logo.jpg" alt="" width="128" height="54">
+            </a>                 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="productos-contruccion.html">Para profesionales</a></li>
+                          <li><a class="dropdown-item" href="productos-jardin.html">Para su jardin</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Envios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobrenosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>              
+        </div>
+    </nav>
+    <section class="galeria">
+        <div class="portadaProfesionales"></div>
+        <div class="container productos">
+            <div class="row mt-3">
+                <img class="rounded-5" srcset="imagenes/cintadestapacaneria.jpg" alt="cinta destapa cañeria">
+                <div class="descripcion col ms-4">
+                    <h3>Cinta destapa cañeria</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dicta voluptates ducimus quas, quod praesentium quibusdam dolor molestiae aspernatur ut. Modi non reprehenderit minima cumque? Esse provident dignissimos rerum corrupti!</p>
+                </div>  
+            </div>
+            <div class="descripcion">
+                <img class="rounded-5" srcset="imagenes/hojasdesierra.jpg" alt="arco de sierra">
+                <div class="descripcion ms-4">
+                    <h3>Arcos de sierra</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dicta voluptates ducimus quas, quod praesentium quibusdam dolor molestiae aspernatur ut. Modi non reprehenderit minima cumque? Esse provident dignissimos rerum corrupti!</p>
+                </div> 
+            </div>
+            <div class="mt-3">
+                <img id="plomada" class="rounded-5" srcset="imagenes/plomadas.jpg" alt="plomadas de albañil">
+                <div class="descripcion ms-4">
+                    <h3>Plomadas de albañil</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dicta voluptates ducimus quas, quod praesentium quibusdam dolor molestiae aspernatur ut. Modi non reprehenderit minima cumque? Esse provident dignissimos rerum corrupti!</p>
+                </div>
+            </div>
+            <div class="mt-3">
+                <img class="rounded-5" srcset="imagenes/poleas.jpg" alt="poleas de transmision">
+                <div class="descripcion ms-4">
+                    <h3>Poleas de transmision</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dicta voluptates ducimus quas, quod praesentium quibusdam dolor molestiae aspernatur ut. Modi non reprehenderit minima cumque? Esse provident dignissimos rerum corrupti!</p>
+                </div>
+            </div>
+            <div class="mt-3">
+                <img id="roldana" class="rounded-5" srcset="imagenes/roldana.jpg" alt="roldana">
+                <div class="descripcion ms-4">
+                    <h3>Roldana</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dicta voluptates ducimus quas, quod praesentium quibusdam dolor molestiae aspernatur ut. Modi non reprehenderit minima cumque? Esse provident dignissimos rerum corrupti!</p>
+                </div>
+            </div>
+            <div class="mt-3">
+                <img id="plomada" class="rounded-5" srcset="imagenes/tensores.jpg" alt="tensor">
+                <div class="descripcion ms-4">
+                    <h3>Tensor</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dicta voluptates ducimus quas, quod praesentium quibusdam dolor molestiae aspernatur ut. Modi non reprehenderit minima cumque? Esse provident dignissimos rerum corrupti!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer  class="footer">
+        <nav>
+            <div class="box1">
+                <div><a class="facebook" href="https://www.facebook.com">Facebook</a></div>
+                <div><a class="instagram" href="https://www.instagram.com/">Instagram</a></div>
             </div>
         </nav>
-        <section class="galeria">
-            <div class="portadaProfesionales"></div>
-            <div class="container productos">
-                <div class="row mt-3">
-                    <img class="rounded-5" srcset="imagenes/cintadestapacaneria.jpg" alt="cinta destapa cañeria">
-                    <div class="descripcion col ms-4">
-                        <h3>Cinta destapa cañeria</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dicta voluptates ducimus quas, quod praesentium quibusdam dolor molestiae aspernatur ut. Modi non reprehenderit minima cumque? Esse provident dignissimos rerum corrupti!</p>
-                    </div>  
-                </div>
-                <div class="descripcion">
-                    <img class="rounded-5" srcset="imagenes/hojasdesierra.jpg" alt="arco de sierra">
-                    <div class="descripcion ms-4">
-                        <h3>Arcos de sierra</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dicta voluptates ducimus quas, quod praesentium quibusdam dolor molestiae aspernatur ut. Modi non reprehenderit minima cumque? Esse provident dignissimos rerum corrupti!</p>
-                    </div> 
-                </div>
-                <div class="mt-3">
-                    <img id="plomada" class="rounded-5" srcset="imagenes/plomadas.jpg" alt="plomadas de albañil">
-                    <div class="descripcion ms-4">
-                        <h3>Plomadas de albañil</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dicta voluptates ducimus quas, quod praesentium quibusdam dolor molestiae aspernatur ut. Modi non reprehenderit minima cumque? Esse provident dignissimos rerum corrupti!</p>
-                    </div>
-                </div>
-                <div class="mt-3">
-                    <img class="rounded-5" srcset="imagenes/poleas.jpg" alt="poleas de transmision">
-                    <div class="descripcion ms-4">
-                        <h3>Poleas de transmision</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dicta voluptates ducimus quas, quod praesentium quibusdam dolor molestiae aspernatur ut. Modi non reprehenderit minima cumque? Esse provident dignissimos rerum corrupti!</p>
-                    </div>
-                </div>
-                <div class="mt-3">
-                    <img id="roldana" class="rounded-5" srcset="imagenes/roldana.jpg" alt="roldana">
-                    <div class="descripcion ms-4">
-                        <h3>Roldana</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dicta voluptates ducimus quas, quod praesentium quibusdam dolor molestiae aspernatur ut. Modi non reprehenderit minima cumque? Esse provident dignissimos rerum corrupti!</p>
-                    </div>
-                </div>
-                <div class="mt-3">
-                    <img id="plomada" class="rounded-5" srcset="imagenes/tensores.jpg" alt="tensor">
-                    <div class="descripcion ms-4">
-                        <h3>Tensor</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dicta voluptates ducimus quas, quod praesentium quibusdam dolor molestiae aspernatur ut. Modi non reprehenderit minima cumque? Esse provident dignissimos rerum corrupti!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer  class="footer">
-            <nav>
-                <div class="box1">
-                    <div><a class="facebook" href="https://www.facebook.com">Facebook</a></div>
-                    <div><a class="instagram" href="https://www.instagram.com/">Instagram</a></div>
-                </div>
-            </nav>
-            <div class="box2">
-                <p><span>Direccion:</span> Quindimil 3739 Valentin Alsina - Buenos Aires</p>
-                <p><span>Teléfono:</span> 054-11-1111-1111 - Fax.: 1111-1111</p>
-                <p><span>E-mail:</span> 1111@rcc.com.ar y 111111@hotmail.com</p>
-            </div>
-    </footer>
+        <div class="box2">
+            <p><span>Direccion:</span> Quindimil 3739 Valentin Alsina - Buenos Aires</p>
+            <p><span>Teléfono:</span> 054-11-1111-1111 - Fax.: 1111-1111</p>
+            <p><span>E-mail:</span> 1111@rcc.com.ar y 111111@hotmail.com</p>
+        </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
