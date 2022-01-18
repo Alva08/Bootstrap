@@ -1,33 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lato:wght@300&display=swap");
-/* line 3, ../../institucional.Toth/scss/_main.scss */
+/* line 3, ../../../../../institucional.Toth/scss/_main.scss */
 * {
   padding: 0px;
   margin: 0px;
 }
 
-/* line 8, ../../institucional.Toth/scss/_main.scss */
+/* line 8, ../../../../../institucional.Toth/scss/_main.scss */
 body {
   font-family: 'Lato';
 }
 
-/* line 12, ../../institucional.Toth/scss/_main.scss */
+/* line 12, ../../../../../institucional.Toth/scss/_main.scss */
 #navBar {
   font-family: 'Bakbak';
 }
 
-/* line 14, ../../institucional.Toth/scss/_main.scss */
+/* line 14, ../../../../../institucional.Toth/scss/_main.scss */
 #navBar a {
   color: #2c81d7;
   font-size: 20px;
   font-weight: 500;
 }
 
-/* line 17, ../../institucional.Toth/scss/_main.scss */
+/* line 17, ../../../../../institucional.Toth/scss/_main.scss */
 #navBar li {
   margin-left: 20px;
 }
 
-/* line 22, ../../institucional.Toth/scss/_main.scss */
+/* line 22, ../../../../../institucional.Toth/scss/_main.scss */
 .fotoPortada {
   height: 72vh;
   background-image: url("../imagenes/portada.jpg");
@@ -37,7 +37,7 @@ body {
   background-blend-mode: soft-light;
 }
 
-/* line 29, ../../institucional.Toth/scss/_main.scss */
+/* line 29, ../../../../../institucional.Toth/scss/_main.scss */
 .fotoPortada h1 {
   position: absolute;
   color: #fff;
@@ -45,19 +45,19 @@ body {
   font-weight: 600;
 }
 
-/* line 33, ../../institucional.Toth/scss/_main.scss */
+/* line 33, ../../../../../institucional.Toth/scss/_main.scss */
 .fotoPortada span {
   color: #fff;
   font-size: 40px;
   font-weight: 300;
 }
 
-/* line 38, ../../institucional.Toth/scss/_main.scss */
+/* line 38, ../../../../../institucional.Toth/scss/_main.scss */
 .contenedorFotos {
   background-color: #d3d2d2;
 }
 
-/* line 40, ../../institucional.Toth/scss/_main.scss */
+/* line 40, ../../../../../institucional.Toth/scss/_main.scss */
 .contenedorFotos h2 {
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
@@ -66,39 +66,45 @@ body {
   font-weight: 300;
 }
 
-/* line 45, ../../institucional.Toth/scss/_main.scss */
+/* line 45, ../../../../../institucional.Toth/scss/_main.scss */
 .contenedorFotos img {
   border-radius: 1.5rem;
 }
 
-/* line 50, ../../institucional.Toth/scss/_main.scss */
+/* line 50, ../../../../../institucional.Toth/scss/_main.scss */
 .transform:hover {
   transform: scale(1.1);
 }
 
-/* line 54, ../../institucional.Toth/scss/_main.scss */
+/* line 54, ../../../../../institucional.Toth/scss/_main.scss */
+.transform2:hover {
+  transform: scale(1.3);
+  color: black;
+}
+
+/* line 59, ../../../../../institucional.Toth/scss/_main.scss */
 .transition {
   transition: all 400ms ease-in-out;
 }
 
-/* line 58, ../../institucional.Toth/scss/_main.scss */
+/* line 63, ../../../../../institucional.Toth/scss/_main.scss */
 .destacados {
   background-color: #d3d2d2;
 }
 
-/* line 60, ../../institucional.Toth/scss/_main.scss */
+/* line 65, ../../../../../institucional.Toth/scss/_main.scss */
 .destacados h3 {
   color: #000;
   font-size: 40px;
   font-weight: 500;
 }
 
-/* line 66, ../../institucional.Toth/scss/_main.scss */
+/* line 71, ../../../../../institucional.Toth/scss/_main.scss */
 .galeria {
   background-color: #d3d2d2;
 }
 
-/* line 68, ../../institucional.Toth/scss/_main.scss */
+/* line 73, ../../../../../institucional.Toth/scss/_main.scss */
 .galeria .portadaProfesionales {
   height: 72vh;
   background-image: url("../imagenes/profesionales.jpg");
@@ -106,7 +112,7 @@ body {
   object-fit: cover;
 }
 
-/* line 74, ../../institucional.Toth/scss/_main.scss */
+/* line 79, ../../../../../institucional.Toth/scss/_main.scss */
 .galeria .portadaJardin {
   height: 72vh;
   background-size: cover;
@@ -115,48 +121,48 @@ body {
   object-fit: cover;
 }
 
-/* line 81, ../../institucional.Toth/scss/_main.scss */
+/* line 86, ../../../../../institucional.Toth/scss/_main.scss */
 .galeria h3 {
   color: #000;
   font-size: 25px;
   font-weight: 600;
 }
 
-/* line 84, ../../institucional.Toth/scss/_main.scss */
+/* line 89, ../../../../../institucional.Toth/scss/_main.scss */
 .galeria p {
   color: #000;
   font-size: 17px;
   font-weight: 400;
 }
 
-/* line 89, ../../institucional.Toth/scss/_main.scss */
+/* line 94, ../../../../../institucional.Toth/scss/_main.scss */
 .footer {
   background-color: #2c81d7;
 }
 
-/* line 91, ../../institucional.Toth/scss/_main.scss */
-.footer .box1 {
+/* line 96, ../../../../../institucional.Toth/scss/_main.scss */
+.footer .box3 {
   color: white;
 }
 
-/* line 93, ../../institucional.Toth/scss/_main.scss */
-.footer .box1 a {
+/* line 98, ../../../../../institucional.Toth/scss/_main.scss */
+.footer .box3 a {
   color: white;
 }
 
-/* line 100, ../../institucional.Toth/scss/_main.scss */
+/* line 102, ../../../../../institucional.Toth/scss/_main.scss */
 .footer span {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
 }
 
-/* line 103, ../../institucional.Toth/scss/_main.scss */
+/* line 105, ../../../../../institucional.Toth/scss/_main.scss */
 .footer p {
   color: #fff;
-  font-size: 25px;
+  font-size: 15px;
   font-weight: 300;
-  line-height: 15px;
+  line-height: 10px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
