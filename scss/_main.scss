@@ -27,8 +27,14 @@ body{
         background-color:rgb(50, 50, 50);
         background-blend-mode: soft-light; 
         h1{
-            position: absolute;
-            @include colorMedidas(#fff,80px,600);          
+            position: relative;
+            @include colorMedidas(#fff,150px,600);
+            @media  all and (max-width: 1400px){
+                font-size: 100px ;
+            }
+            @media  all and (max-width: 992px){
+                font-size: 70px;
+            }     
         }
         span{
             @include colorMedidas(#fff,40px,300); 
@@ -91,8 +97,61 @@ body{
     }
 }
 
+.nosotros{
+    background-color:rgb(211, 210, 210); 
+    .nosotrosPortada{
+        height: 72vh;
+        background-image: url('../imagenes/sobrenosotros.jpg');
+        background-position: center;
+        background-size: cover;
+        background-color:rgb(50, 50, 50);
+        background-blend-mode: soft-light;
+        line-height: 10px;
+        padding: 160px;
+        h3{
+            @include colorMedidas(#fff,32px,600);
+            position: relative;
+        }
+        p{
+            position: relative;
+            @include colorMedidas(#fff,20px,400);
+        }     
+    }
+    .nosotrosDescripcion{
+        h3{
+            @include colorMedidas(#000,30px,600);
+        }
+        p{
+            @include colorMedidas(#000,20px,300);
+        } 
+    }
+}
+
+.contacto{
+    background-color:rgb(211, 210, 210);
+    p{
+        @include colorMedidas (#000,20px,600);
+    }
+    input{
+        width: 100%;
+        height: 60px;
+    }
+    textarea{
+        height: 140px;
+    }
+    .boton{
+        width: 150px;
+        height: 50px;
+        background-color: white;
+        color: black;
+    }
+}
+
 .footer{
     background-color: $azultoth;
+    .box1{
+        width: auto;
+    }
     .box3{
         color: white;
         a{
@@ -100,10 +159,10 @@ body{
         }
     }
     span{
-        @include colorMedidas(#fff,20px,400);
+        @include colorMedidas(#fff,18px,400);
     }
     p{
-        @include colorMedidas(#fff,15px,300);
+        @include colorMedidas(#fff,13px,300);
         line-height: 10px;
     }
 }
