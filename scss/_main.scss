@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600&display=swap');
 
 *{
     padding:0px;
@@ -6,39 +6,43 @@
 }
 
 body{
-    font-family:'Lato';
+    font-family:'Outfit';
 }
 
 #navBar{
     font-family:'Bakbak';
     a{
-       @include colorMedidas($azultoth,20px,500);
+       @include colorMedidas($azultoth,20px,600);
     }
     li{
         margin-left: 20px;
     }
 }
 
-.fotoPortada{
+.portadaIndex{
         height: 72vh;
         background-image: url('../imagenes/portada.jpg');
         background-position: center;
         background-size: cover;
         background-color:rgb(50, 50, 50);
-        background-blend-mode: soft-light; 
+        background-blend-mode: soft-light;
+        @media  all and (max-width: $bp-md){
+            height: 42vh;
+            background-image: url('../imagenes/portadamobile2.jpg');
+        }
         h1{
             position: relative;
-            @include colorMedidas(#fff,150px,600);
+            @include colorMedidas(#fff,130px,600);
             @media  all and (max-width: 1400px){
-                font-size: 100px ;
+                font-size: 90px ;
             }
             @media  all and (max-width: 992px){
                 font-size: 70px;
-            }     
-        }
-        span{
-            @include colorMedidas(#fff,40px,300); 
-        }      
+            }
+            @media  all and (max-width: 712px){
+                font-size: 40px;
+            }       
+        }    
 }
 
 .contenedorFotos{
@@ -46,7 +50,7 @@ body{
     h2{
         position: absolute;
         background: rgba(0, 0, 0, 0.6);
-        @include colorMedidas(#fff,30px,300);          
+        @include colorMedidas(#fff,30px,400);          
     }
     img{
         border-radius: 1.5rem;
@@ -64,26 +68,29 @@ body{
 .destacados{
     background-color: rgb(211, 210, 210);
     h3{
-        @include colorMedidas(#000,40px,500);
+        @include colorMedidas(#000,40px,400);
     }
 }
-
 
 .portadaConstruccion{
         height: 72vh;
         background-image: url('../imagenes/profesionales.jpg');
         background-position: center;
         object-fit: cover;
+        @media  all and (max-width: $bp-md){
+            height: 42vh;
+            background-image: url('../imagenes/profesionalesmobile.jpg');
+        }
 }
 
 .construccion{
     background-color:rgb(211, 210, 210);
-    .galeria{
+    .galeriaProductos{
         h3{
-        @include colorMedidas(#000,25px,600);
+        @include colorMedidas(#000,25px,400);
         }
         p{
-        @include colorMedidas(#000,17px,400); 
+        @include colorMedidas(#000,17px,200); 
         }
     }
 }
@@ -91,75 +98,93 @@ body{
 .portadaJardin{
     height: 72vh;
     background-size: cover;
-    background-image: url('../imagenes/sujardin2.jpg');
+    background-image: url('../imagenes/sujardin.jpg');
     background-position: center;
     object-fit: cover;
+    @media  all and (max-width: $bp-md){
+        height: 42vh;
+        background-image: url('../imagenes/sujardinmobile.jpg');
+    }
 }
 
 .jardin{
     background-color:rgb(211, 210, 210);
     .galeria{
         h3{
-        @include colorMedidas(#000,25px,600);
+        @include colorMedidas(#000,25px,400);
         }
         p{
-        @include colorMedidas(#000,17px,400); 
+        @include colorMedidas(#000,17px,200); 
         }
     }
 }
 
-.nosotrosPortada{
+.portadaEnvios{
+    height: 72vh;
+    background-image: url('../imagenes/envios.jpg');
+    background-position: center;
+    background-size: cover;
+    @media  all and (max-width: $bp-md){
+        height: 42vh;
+        background-image: url('../imagenes/enviosmobile.jpg');
+    }
+}
+
+.envios{
+    background-color:rgb(211, 210, 210); 
+    .descripcionEnvios{
+        line-height: 30px;
+        p{
+            @include colorMedidas(#000,20px,200);
+        }
+        span{
+            @include colorMedidas(#000,20px,400);
+        }
+    }
+}
+
+.portadaNosotros{
     height: 72vh;
     background-image: url('../imagenes/sobrenosotros.jpg');
     background-position: center;
     background-size: cover;
     background-color:rgb(50, 50, 50);
     background-blend-mode: soft-light;
-    line-height: 10px;
-    padding: 160px;
+    @media  all and (max-width: $bp-md){
+        height: 42vh;
+        background-image: url('../imagenes/sobrenosotrosmobile.jpg');
+    }
+    .textoNosotrosPortada{
+        line-height: 10px;
+        padding: 160px;
+        @media  all and (max-width: $bp-md){
+            padding: 80px;
+        }
+    }
     h3{
-        @include colorMedidas(#fff,32px,600);
+        @include colorMedidas(#fff,32px,400);
         position: relative;
+        @media  all and (max-width: $bp-md){
+            font-size: 25px;
+        }
     }
     p{
         position: relative;
-        @include colorMedidas(#fff,20px,400);
+        @include colorMedidas(#fff,20px,200);
+        @media  all and (max-width: $bp-md){
+            font-size:15px;
+        }
     }     
-}
-
-.envios{
-    height: 72vh;
-    background-image: url('../imagenes/envios.jpg');
-    background-position: center;
-    background-size: cover;
-}
-
-.contenedorEnvios{
-    background-color:rgb(211, 210, 210); 
-    .descripcionEnvios{
-        h2{
-            @include colorMedidas(#000,40px,600);
-        }
-        h3{
-            @include colorMedidas(#000,30px,500);
-        }
-        p{
-            @include colorMedidas(#000,20px,400);
-        }
-        span{
-            @include colorMedidas(#000,30px,500);
-        }
-    }
 }
 
 .nosotros{
     background-color:rgb(211, 210, 210); 
     .nosotrosDescripcion{
         h3{
-            @include colorMedidas(#000,30px,600);
+            @include colorMedidas(#000,40px,400);
         }
         p{
-            @include colorMedidas(#000,20px,300);
+            @include colorMedidas(#000,30px,200);
         } 
     }
 }
@@ -167,7 +192,7 @@ body{
 .contacto{
     background-color:rgb(211, 210, 210);
     p{
-        @include colorMedidas (#000,20px,600);
+        @include colorMedidas (#000,20px,400);
     }
     .transform2:hover{
         transform: scale(1.1);
@@ -204,7 +229,7 @@ body{
         @include colorMedidas(#fff,18px,400);
     }
     p{
-        @include colorMedidas(#fff,13px,300);
+        @include colorMedidas(#fff,13px,200);
         line-height: 10px;
     }
 }
