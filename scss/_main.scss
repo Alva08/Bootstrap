@@ -28,7 +28,7 @@ body{
         background-blend-mode: soft-light;
         @media  all and (max-width: $bp-md){
             height: 42vh;
-            background-image: url('../imagenes/portadamobile2.jpg');
+            background-image: url('../imagenes/portadamobile.jpg');
         }
         h1{
             position: relative;
@@ -40,7 +40,7 @@ body{
                 font-size: 70px;
             }
             @media  all and (max-width: 712px){
-                font-size: 40px;
+                font-size: 55px;
             }       
         }    
 }
@@ -50,7 +50,7 @@ body{
     h2{
         position: absolute;
         background: rgba(0, 0, 0, 0.6);
-        @include colorMedidas(#fff,30px,400);          
+        @include colorMedidas(#fff,20px,400);          
     }
     img{
         border-radius: 1.5rem;
@@ -181,10 +181,13 @@ body{
     background-color:rgb(211, 210, 210); 
     .nosotrosDescripcion{
         h3{
-            @include colorMedidas(#000,40px,400);
+            @include colorMedidas(#000,30px,400);
+        }
+        h4{
+            @include colorMedidas(#000,20px,400);
         }
         p{
-            @include colorMedidas(#000,30px,200);
+            @include colorMedidas(#000,20px,200);
         } 
     }
 }
