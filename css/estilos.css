@@ -140,7 +140,16 @@ body {
   }
 }
 
-/* line 86, ../../../../../institucional.Toth/scss/_main.scss */
+@media all and (max-width: 430px) {
+  /* line 78, ../../../../../institucional.Toth/scss/_main.scss */
+  .destacados h3 {
+    color: #000;
+    font-size: 23px;
+    font-weight: 400;
+  }
+}
+
+/* line 89, ../../../../../institucional.Toth/scss/_main.scss */
 .portadaConstruccion {
   height: 72vh;
   background-image: url("../imagenes/profesionales.jpg");
@@ -149,33 +158,33 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 86, ../../../../../institucional.Toth/scss/_main.scss */
+  /* line 89, ../../../../../institucional.Toth/scss/_main.scss */
   .portadaConstruccion {
     height: 42vh;
     background-image: url("../imagenes/profesionalesmobile.jpg");
   }
 }
 
-/* line 97, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 100, ../../../../../institucional.Toth/scss/_main.scss */
 .construccion {
   background-color: #d3d2d2;
 }
 
-/* line 100, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 103, ../../../../../institucional.Toth/scss/_main.scss */
 .construccion .galeriaProductos h3 {
   color: #000;
   font-size: 25px;
   font-weight: 400;
 }
 
-/* line 103, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 106, ../../../../../institucional.Toth/scss/_main.scss */
 .construccion .galeriaProductos p {
   color: #000;
   font-size: 17px;
   font-weight: 200;
 }
 
-/* line 109, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 112, ../../../../../institucional.Toth/scss/_main.scss */
 .portadaJardin {
   height: 72vh;
   background-size: cover;
@@ -185,33 +194,33 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 109, ../../../../../institucional.Toth/scss/_main.scss */
+  /* line 112, ../../../../../institucional.Toth/scss/_main.scss */
   .portadaJardin {
     height: 42vh;
     background-image: url("../imagenes/sujardinmobile.jpg");
   }
 }
 
-/* line 121, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 124, ../../../../../institucional.Toth/scss/_main.scss */
 .jardin {
   background-color: #d3d2d2;
 }
 
-/* line 124, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 127, ../../../../../institucional.Toth/scss/_main.scss */
 .jardin .galeria h3 {
   color: #000;
   font-size: 25px;
   font-weight: 400;
 }
 
-/* line 127, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 130, ../../../../../institucional.Toth/scss/_main.scss */
 .jardin .galeria p {
   color: #000;
   font-size: 17px;
   font-weight: 200;
 }
 
-/* line 133, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 136, ../../../../../institucional.Toth/scss/_main.scss */
 .portadaEnvios {
   height: 72vh;
   background-image: url("../imagenes/envios.jpg");
@@ -220,38 +229,38 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 133, ../../../../../institucional.Toth/scss/_main.scss */
+  /* line 136, ../../../../../institucional.Toth/scss/_main.scss */
   .portadaEnvios {
     height: 42vh;
     background-image: url("../imagenes/enviosmobile.jpg");
   }
 }
 
-/* line 144, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 147, ../../../../../institucional.Toth/scss/_main.scss */
 .envios {
   background-color: #d3d2d2;
 }
 
-/* line 146, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 149, ../../../../../institucional.Toth/scss/_main.scss */
 .envios .descripcionEnvios {
   line-height: 30px;
 }
 
-/* line 148, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 151, ../../../../../institucional.Toth/scss/_main.scss */
 .envios .descripcionEnvios p {
   color: #000;
   font-size: 20px;
   font-weight: 200;
 }
 
-/* line 151, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 154, ../../../../../institucional.Toth/scss/_main.scss */
 .envios .descripcionEnvios span {
   color: #000;
   font-size: 20px;
   font-weight: 400;
 }
 
-/* line 157, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 160, ../../../../../institucional.Toth/scss/_main.scss */
 .portadaNosotros {
   height: 72vh;
   background-image: url("../imagenes/sobrenosotros.jpg");
@@ -262,27 +271,27 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 157, ../../../../../institucional.Toth/scss/_main.scss */
+  /* line 160, ../../../../../institucional.Toth/scss/_main.scss */
   .portadaNosotros {
     height: 42vh;
     background-image: url("../imagenes/sobrenosotrosmobile.jpg");
   }
 }
 
-/* line 168, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 171, ../../../../../institucional.Toth/scss/_main.scss */
 .portadaNosotros .textoNosotrosPortada {
   line-height: 10px;
   padding: 160px;
 }
 
 @media all and (max-width: 768px) {
-  /* line 168, ../../../../../institucional.Toth/scss/_main.scss */
+  /* line 171, ../../../../../institucional.Toth/scss/_main.scss */
   .portadaNosotros .textoNosotrosPortada {
     padding: 80px;
   }
 }
 
-/* line 175, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 178, ../../../../../institucional.Toth/scss/_main.scss */
 .portadaNosotros h3 {
   color: #fff;
   font-size: 32px;
@@ -291,13 +300,13 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 175, ../../../../../institucional.Toth/scss/_main.scss */
+  /* line 178, ../../../../../institucional.Toth/scss/_main.scss */
   .portadaNosotros h3 {
     font-size: 25px;
   }
 }
 
-/* line 182, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 185, ../../../../../institucional.Toth/scss/_main.scss */
 .portadaNosotros p {
   position: relative;
   color: #fff;
@@ -306,69 +315,69 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 182, ../../../../../institucional.Toth/scss/_main.scss */
+  /* line 185, ../../../../../institucional.Toth/scss/_main.scss */
   .portadaNosotros p {
     font-size: 15px;
   }
 }
 
-/* line 191, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 194, ../../../../../institucional.Toth/scss/_main.scss */
 .nosotros {
   background-color: #d3d2d2;
 }
 
-/* line 194, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 197, ../../../../../institucional.Toth/scss/_main.scss */
 .nosotros .nosotrosDescripcion h3 {
   color: #000;
   font-size: 30px;
   font-weight: 400;
 }
 
-/* line 197, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 200, ../../../../../institucional.Toth/scss/_main.scss */
 .nosotros .nosotrosDescripcion h4 {
   color: #000;
   font-size: 20px;
   font-weight: 400;
 }
 
-/* line 200, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 203, ../../../../../institucional.Toth/scss/_main.scss */
 .nosotros .nosotrosDescripcion p {
   color: #000;
   font-size: 20px;
   font-weight: 200;
 }
 
-/* line 206, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 209, ../../../../../institucional.Toth/scss/_main.scss */
 .contacto {
   background-color: #d3d2d2;
 }
 
-/* line 208, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 211, ../../../../../institucional.Toth/scss/_main.scss */
 .contacto p {
   color: #000;
   font-size: 20px;
   font-weight: 400;
 }
 
-/* line 211, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 214, ../../../../../institucional.Toth/scss/_main.scss */
 .contacto .transform2:hover {
   transform: scale(1.1);
   background-color: #2c81d7;
   color: white;
 }
 
-/* line 216, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 219, ../../../../../institucional.Toth/scss/_main.scss */
 .contacto input {
   width: 100%;
   height: 60px;
 }
 
-/* line 220, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 223, ../../../../../institucional.Toth/scss/_main.scss */
 .contacto textarea {
   height: 140px;
 }
 
-/* line 223, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 226, ../../../../../institucional.Toth/scss/_main.scss */
 .contacto .boton {
   width: 150px;
   height: 50px;
@@ -376,37 +385,37 @@ body {
   color: black;
 }
 
-/* line 231, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 234, ../../../../../institucional.Toth/scss/_main.scss */
 .footer {
   background-color: #2c81d7;
 }
 
-/* line 233, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 236, ../../../../../institucional.Toth/scss/_main.scss */
 .footer .box1 {
   width: auto;
 }
 
-/* line 236, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 239, ../../../../../institucional.Toth/scss/_main.scss */
 .footer .box3 {
   color: white;
 }
 
-/* line 239, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 242, ../../../../../institucional.Toth/scss/_main.scss */
 .footer .box3 .transform2:hover {
   transform: scale(1.2);
 }
 
-/* line 244, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 247, ../../../../../institucional.Toth/scss/_main.scss */
 .footer .box3 .transition2:hover {
   transition: all 400ms ease-in-out;
 }
 
-/* line 248, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 251, ../../../../../institucional.Toth/scss/_main.scss */
 .footer .box3 a {
   color: white;
 }
 
-/* line 252, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 255, ../../../../../institucional.Toth/scss/_main.scss */
 .footer span {
   color: #fff;
   font-size: 18px;
@@ -414,7 +423,7 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 252, ../../../../../institucional.Toth/scss/_main.scss */
+  /* line 255, ../../../../../institucional.Toth/scss/_main.scss */
   .footer span {
     color: #fff;
     font-size: 14px;
@@ -422,7 +431,7 @@ body {
   }
 }
 
-/* line 258, ../../../../../institucional.Toth/scss/_main.scss */
+/* line 261, ../../../../../institucional.Toth/scss/_main.scss */
 .footer p {
   color: #fff;
   font-size: 13px;
@@ -431,7 +440,7 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 258, ../../../../../institucional.Toth/scss/_main.scss */
+  /* line 261, ../../../../../institucional.Toth/scss/_main.scss */
   .footer p {
     color: #fff;
     font-size: 9px;

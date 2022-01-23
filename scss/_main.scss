@@ -79,7 +79,10 @@ body{
         @include colorMedidas(#000,40px,400);
         @media  all and (max-width:$bp-md){
             @include colorMedidas(#000,30px,400);
-        }   
+        }
+        @media  all and (max-width:$bp-xsm){
+            @include colorMedidas(#000,23px,400);
+        }
     }
 }
 
