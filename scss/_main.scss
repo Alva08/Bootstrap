@@ -54,9 +54,12 @@ body{
         position: absolute;
         background: rgba(0, 0, 0, 0.6);
         @include colorMedidas(#fff,20px,400);
-        @media  all and (max-width:$bp-md){
+        @media  all and (max-width:$bp-sm){
+            @include colorMedidas(#fff,18px,400);
+        }
+        @media  all and (max-width:$bp-xsm){
             @include colorMedidas(#fff,14px,400);
-        }            
+        }                 
     }
     img{
         border-radius: 1.5rem;
@@ -77,7 +80,7 @@ body{
     background-color: rgb(211, 210, 210);
     h3{
         @include colorMedidas(#000,40px,400);
-        @media  all and (max-width:$bp-md){
+        @media  all and (max-width:$bp-sm){
             @include colorMedidas(#000,30px,400);
         }
         @media  all and (max-width:$bp-xsm){
