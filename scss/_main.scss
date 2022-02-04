@@ -12,7 +12,6 @@ body{
 #navBar{
     font-family:'Bakbak';
     width: 100%;
-    height: 80px;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -25,7 +24,6 @@ body{
 }
 
 .portadaIndex{
-        margin-top: 80px;
         height: 72vh;
         background-image: url('../imagenes/portada.jpg');
         background-position: center;
@@ -107,7 +105,6 @@ body{
 }
 
 .portadaConstruccion{
-        margin-top: 80px;
         height: 72vh;
         background-image: url('../imagenes/profesionales.jpg');
         background-position: center;
@@ -131,7 +128,6 @@ body{
 }
 
 .portadaJardin{
-    margin-top: 80px;
     height: 72vh;
     background-size: cover;
     background-image: url('../imagenes/sujardin.jpg');
@@ -159,7 +155,6 @@ body{
 }
 
 .portadaEnvios{
-    margin-top: 80px;
     height: 72vh;
     background-image: url('../imagenes/envios.jpg');
     background-position: center;
@@ -187,7 +182,6 @@ body{
 }
 
 .portadaNosotros{
-    margin-top: 80px;
     height: 72vh;
     background-image: url('../imagenes/sobrenosotros.jpg');
     background-position: center;
@@ -237,7 +231,6 @@ body{
 }
 
 .contacto{
-    margin-top: 80px;
     background-color:rgb(211, 210, 210);
     p{
         @include colorMedidas (#000,20px,400);

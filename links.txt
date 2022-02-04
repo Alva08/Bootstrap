@@ -8,3 +8,9 @@ github:
 host:
 
 1-https://alvarotothcoder.000webhostapp.com/
+
+hoisting
+closure
+scope
+callstack
+execution context
