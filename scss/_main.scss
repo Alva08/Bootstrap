@@ -24,32 +24,33 @@ body{
 }
 
 .portadaIndex{
-        height: 72vh;
-        background-image: url('../imagenes/portada.jpg');
-        background-position: center;
-        background-size: cover;
-        background-color:rgb(50, 50, 50);
-        background-blend-mode: soft-light;
-        @media  all and (max-width: $bp-md){
-            height: 42vh;
-            background-image: url('../imagenes/portadamobile.jpg');
+    margin-top: 80px;
+    height: 72vh;
+    background-image: url('../imagenes/portada.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color:rgb(50, 50, 50);
+    background-blend-mode: soft-light;
+    @media  all and (max-width: $bp-md){
+        height: 42vh;
+        background-image: url('../imagenes/portadamobile.jpg');
+    }
+    h1{
+        position: relative;
+        @include colorMedidas(#fff,130px,600);
+        @media  all and (max-width:$bp-xxl){
+            font-size: 90px ;
         }
-        h1{
-            position: relative;
-            @include colorMedidas(#fff,130px,600);
-            @media  all and (max-width:$bp-xxl){
-                font-size: 90px ;
-            }
-            @media  all and (max-width:$bp-lg){
-                font-size: 70px;
-            }
-            @media  all and (max-width:$bp-md){
-                font-size: 55px;
-            }
-            @media  all and (max-width:$bp-sm){
-                font-size: 35px;
-            }        
-        }    
+        @media  all and (max-width:$bp-lg){
+            font-size: 70px;
+        }
+        @media  all and (max-width:$bp-md){
+            font-size: 55px;
+        }
+        @media  all and (max-width:$bp-sm){
+            font-size: 35px;
+        }        
+    }    
 }
 
 .contenedorFotos{
@@ -105,6 +106,7 @@ body{
 }
 
 .portadaConstruccion{
+        margin-top: 80px;
         height: 72vh;
         background-image: url('../imagenes/profesionales.jpg');
         background-position: center;
@@ -128,6 +130,7 @@ body{
 }
 
 .portadaJardin{
+    margin-top: 80px;
     height: 72vh;
     background-size: cover;
     background-image: url('../imagenes/sujardin.jpg');
@@ -155,6 +158,7 @@ body{
 }
 
 .portadaEnvios{
+    margin-top: 80px;
     height: 72vh;
     background-image: url('../imagenes/envios.jpg');
     background-position: center;
@@ -182,6 +186,7 @@ body{
 }
 
 .portadaNosotros{
+    margin-top: 80px;
     height: 72vh;
     background-image: url('../imagenes/sobrenosotros.jpg');
     background-position: center;
@@ -231,6 +236,7 @@ body{
 }
 
 .contacto{
+    margin-top: 80px;
     background-color:rgb(211, 210, 210);
     p{
         @include colorMedidas (#000,20px,400);
